@@ -56,7 +56,7 @@ The React frontend handles the UI and securely talks to the backend REST API. We
 
 ## 4. Post-Deployment Checklist & Verification
 
-1.  **CORS Configuration:** Once your frontend is deployed, ensure that the URL (e.g., `https://finflow-ai.vercel.app`) is allowed in the backend CORS settings. Open `server/src/index.ts` and set your production domain in `cors({ origin: [...] })`. If no domain restrictions are set globally, skip this.
+1.  **CORS Configuration:** I have already updated `server/src/index.ts` to allow requests from your Render and Vercel URLs. If you change your production domains, update the `allowedOrigins` array in the backend accordingly.
 2.  **Verify Routing:** React Router functions as a Single Page Application (SPA). I have included a `client/vercel.json` file in the project. This is **mandatory** for Vercel; it instructs the server to point all deep-links (like `/app/dashboard`) back to `index.html` so React can handle them. Without this, refreshing the page on any sub-route would result in a 404 error.
 3.  **Run a Test Transaction:**
     *   Navigate to your live frontend URL.

@@ -13,7 +13,22 @@ import advisorRoutes from "./routes/advisorRoutes";
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: process.env.CLIENT_URL }));
+const allowedOrigins = [
+    process.env.CLIENT_URL,
+    "https://fsd-finflow-website.onrender.com",
+    "https://fsd-finflow.vercel.app"
+].filter(Boolean) as string[];
+
+app.use(cors({
+    origin: (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    credentials: true
+}));
 app.use(express.json());
 
 app.use((req, res, next) => {
