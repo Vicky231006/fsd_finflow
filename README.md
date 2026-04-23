@@ -3,6 +3,8 @@
 FinFlow AI is a high-performance, production-grade financial intelligence platform designed to transform messy, unstructured financial data (SMS, chats, receipts) into actionable insights using AI. Built with a stunning **Midnight & Lime** aesthetic, it provides a seamless experience for tracking expenses, managing budgets, and gaining deep financial clarity.
 
 ---
+## Video Demo Link: [Link Text](https://drive.google.com/file/d/1Bch2I6q61ehgpx97p7FyhktYBRe-2WXU/view?usp=sharing)
+---
 
 ## 🏗️ System Architecture & Full Flow
 
