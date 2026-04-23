@@ -27,6 +27,8 @@ Rules:
 - Received, credited, earned, salary, from, got = income
 - Understand Indian context: UPI, Swiggy, Zomato, Vada Pav, Biryani, Chai, etc., are common.
 - "Rick" or "Auto" is ALWAYS transport.
+- "Meds", "medicine", "pharmacy" is ALWAYS health.
+- "Stationary", "stationery", "pen", "notebook" is ALWAYS education.
 - If it says "from [person/name]", it is ALWAYS income.
 - If amount unclear, return null
 
@@ -79,6 +81,8 @@ function fallbackParse(text: string) {
     else if (lower.match(/\b(amazon|flipkart|shopping|clothes|myntra|shoes|bag)\b/)) category = "shopping";
     else if (lower.match(/\b(bill|electricity|water|wifi|recharge|jio|airtel|mobile)\b/)) category = "utilities";
     else if (lower.match(/\b(movie|netflix|spotify|party|club|game|steam)\b/)) category = "entertainment";
+    else if (lower.match(/\b(meds|medicine|medicines|doctor|pharmacy|clinic|hospital|pill|pills)\b/)) category = "health";
+    else if (lower.match(/\b(stationary|stationery|book|books|pen|notebook|college|school|tuition)\b/)) category = "education";
     else {
         for (const cat of MOCK_CATEGORIES) {
             if (lower.includes(cat)) {

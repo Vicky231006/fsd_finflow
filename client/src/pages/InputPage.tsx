@@ -34,6 +34,8 @@ export default function InputPage() {
       if (parsed.category === 'other') {
         if (inputLower.includes('rick') || inputLower.includes('auto')) parsed.category = 'transport';
         if (inputLower.includes('chocolate') || inputLower.includes('canteen')) parsed.category = 'food';
+        if (inputLower.match(/\b(meds|medicine|medicines|doctor|pharmacy|pill|pills)\b/)) parsed.category = 'health';
+        if (inputLower.match(/\b(stat|stationary|stationery|pen|notebook|books|book)\b/)) parsed.category = 'education';
       }
 
       // Handle "from" pattern specifically if AI missed the income type
@@ -63,6 +65,8 @@ export default function InputPage() {
         if (cat === 'other') {
           if (lowerDesc.includes('rick') || lowerDesc.includes('auto')) cat = 'transport';
           if (lowerDesc.includes('chocolate') || lowerDesc.includes('canteen')) cat = 'food';
+          if (lowerDesc.match(/\b(meds|medicine|medicines|doctor|pharmacy|pill|pills)\b/)) cat = 'health';
+          if (lowerDesc.match(/\b(stationary|stationery|pen|notebook|books|book)\b/)) cat = 'education';
         }
 
         if (type === 'expense' && lowerDesc.includes('from')) type = 'income';
@@ -86,6 +90,8 @@ export default function InputPage() {
     if (["uber", "travel", "taxi", "ola", "bus", "train", "metro", "fuel", "rick", "auto"].includes(c)) return "transport";
     if (["food", "groceries", "dining", "restaurant", "swiggy", "zomato", "snacks", "icecream", "vada pav", "pav bhaji", "samosa", "pani puri", "biryani", "maggi", "breakfast", "lunch", "dinner", "thali", "dosa", "idli", "momos", "pizza", "burger", "chocolate", "canteen"].includes(c)) return "food";
     if (["movie", "netflix", "game", "spotify"].includes(c)) return "entertainment";
+    if (["meds", "medicine", "medicines", "doctor", "pharmacy", "pill", "pills", "clinic", "hospital"].includes(c)) return "health";
+    if (["stat","stationary", "stationery", "book", "books", "pen", "notebook", "school", "college"].includes(c)) return "education";
     return "other";
   };
 
