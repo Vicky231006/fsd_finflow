@@ -27,7 +27,21 @@ export default function InputPage() {
     setLoading(true);
     try {
       const { data } = await api.post('/transactions/parse', { text: input });
-      setParsedItem(data.data);
+      let parsed = data.data;
+
+      // Heuristic Safety Layer (Overrides AI if generic)
+      const inputLower = input.toLowerCase();
+      if (parsed.category === 'other') {
+        if (inputLower.includes('rick') || inputLower.includes('auto')) parsed.category = 'transport';
+        if (inputLower.includes('chocolate') || inputLower.includes('canteen')) parsed.category = 'food';
+      }
+
+      // Handle "from" pattern specifically if AI missed the income type
+      if (parsed.type === 'expense' && (inputLower.includes('from') || inputLower.includes('got'))) {
+        parsed.type = 'income';
+      }
+
+      setParsedItem(parsed);
       setInput("");
     } catch (err: any) {
       toast.error(err.response?.data?.error?.message || "Parsing failed. Try rephrasing.");
@@ -41,7 +55,21 @@ export default function InputPage() {
     setLoading(true);
     try {
       const { data } = await api.post('/transactions/parse/batch', { text: input });
-      setParsedBatch(data.data);
+      const normalized = data.data.map((t: any) => {
+        const lowerDesc = t.description.toLowerCase();
+        let cat = t.category;
+        let type = t.type;
+
+        if (cat === 'other') {
+          if (lowerDesc.includes('rick') || lowerDesc.includes('auto')) cat = 'transport';
+          if (lowerDesc.includes('chocolate') || lowerDesc.includes('canteen')) cat = 'food';
+        }
+
+        if (type === 'expense' && lowerDesc.includes('from')) type = 'income';
+
+        return { ...t, category: cat, type };
+      });
+      setParsedBatch(normalized);
     } catch (err: any) {
       toast.error(err.response?.data?.error?.message || "Parsing failed.");
     } finally {
@@ -55,8 +83,8 @@ export default function InputPage() {
     const c = cat?.toLowerCase().trim();
     if (VALID_CATEGORIES.includes(c)) return c;
     if (["rent", "home", "bill", "water", "electricity"].includes(c)) return "housing";
-    if (["uber", "travel", "taxi", "ola", "bus", "train", "metro", "fuel"].includes(c)) return "transport";
-    if (["food", "groceries", "dining", "restaurant", "swiggy", "zomato"].includes(c)) return "food";
+    if (["uber", "travel", "taxi", "ola", "bus", "train", "metro", "fuel", "rick", "auto"].includes(c)) return "transport";
+    if (["food", "groceries", "dining", "restaurant", "swiggy", "zomato", "snacks", "icecream", "vada pav", "pav bhaji", "samosa", "pani puri", "biryani", "maggi", "breakfast", "lunch", "dinner", "thali", "dosa", "idli", "momos", "pizza", "burger", "chocolate", "canteen"].includes(c)) return "food";
     if (["movie", "netflix", "game", "spotify"].includes(c)) return "entertainment";
     return "other";
   };
@@ -73,29 +101,41 @@ export default function InputPage() {
             try {
               const dateStr = (row.Date || row.date || "").trim();
               if (dateStr) {
-                const parts = dateStr.split(/[\/\-]/);
-                if (parts.length === 3) {
-                  let p1 = parseInt(parts[0]);
-                  let p2 = parseInt(parts[1]);
-                  let p3 = parseInt(parts[2]);
-                  if (p3 < 100) p3 += 2000;
-
-                  // Decide if it's DD/MM or MM/DD
-                  let day = p1;
-                  let month = p2;
-                  if (p1 > 12) {
-                    // Definitely DD/MM/YYYY
-                  } else if (p2 > 12) {
-                    // Definitely MM/DD/YYYY
-                    day = p2;
-                    month = p1;
-                  } // Else ambiguous, assume DD/MM/YYYY
-
-                  const dObj = new Date(p3, month - 1, day);
+                // Try parsing YYYY-MM-DD first
+                const ymdMatch = dateStr.match(/^(\d{4})[\-\/](\d{1,2})[\-\/](\d{1,2})/);
+                if (ymdMatch) {
+                  const dObj = new Date(parseInt(ymdMatch[1]), parseInt(ymdMatch[2]) - 1, parseInt(ymdMatch[3]));
                   validDate = isNaN(dObj.getTime()) ? new Date().toISOString() : dObj.toISOString();
                 } else {
-                  const d = new Date(dateStr);
-                  validDate = isNaN(d.getTime()) ? new Date().toISOString() : d.toISOString();
+                  const parts = dateStr.split(/[\/\-]/);
+                  if (parts.length === 3) {
+                    let p1 = parseInt(parts[0]);
+                    let p2 = parseInt(parts[1]);
+                    let p3 = parseInt(parts[2]);
+
+                    let day, month, year;
+                    if (p1 > 1000) {
+                      // YYYY-MM-DD (already covered but just in case)
+                      year = p1; month = p2; day = p3;
+                    } else if (p3 > 1000) {
+                      // DD-MM-YYYY or MM-DD-YYYY
+                      year = p3;
+                      if (p1 > 12) { day = p1; month = p2; }
+                      else if (p2 > 12) { day = p2; month = p1; }
+                      else { day = p1; month = p2; }
+                    } else {
+                      // Short years
+                      year = p3 < 100 ? p3 + 2000 : p3;
+                      if (p1 > 12) { day = p1; month = p2; }
+                      else { day = p1; month = p2; }
+                    }
+
+                    const dObj = new Date(year, month - 1, day);
+                    validDate = isNaN(dObj.getTime()) ? new Date().toISOString() : dObj.toISOString();
+                  } else {
+                    const d = new Date(dateStr);
+                    validDate = isNaN(d.getTime()) ? new Date().toISOString() : d.toISOString();
+                  }
                 }
               } else {
                 validDate = new Date().toISOString();

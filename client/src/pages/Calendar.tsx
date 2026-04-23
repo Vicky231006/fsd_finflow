@@ -68,6 +68,16 @@ export default function Calendar() {
         });
     }, [selectedDate, transactions]);
 
+    const dailyTotals = useMemo(() => {
+        return selectedTransactions.reduce((acc, t) => {
+            if (t.type === 'income') acc.income += t.amount;
+            else acc.expense += t.amount;
+            return acc;
+        }, { income: 0, expense: 0 });
+    }, [selectedTransactions]);
+
+    const netAmount = dailyTotals.income - dailyTotals.expense;
+
     // Reset log page when selecting a new date
     useEffect(() => {
         setLogPage(0);
@@ -79,7 +89,6 @@ export default function Calendar() {
     }, [selectedTransactions, logPage]);
 
     const hasNextLogs = (logPage + 1) * logLimit < selectedTransactions.length;
-    const totalLogPages = Math.ceil(selectedTransactions.length / logLimit);
 
     const changeMonth = (offset: number) => {
         const newDate = new Date(year, month + offset, 1);
@@ -88,8 +97,8 @@ export default function Calendar() {
     };
 
     return (
-        <div className="max-w-6xl mx-auto h-full flex flex-col pb-20">
-            <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+        <div className="max-w-6xl mx-auto h-full flex flex-col pb-24 md:pb-20">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4 px-4 md:px-0">
                 <div>
                     <h2 className="text-3xl font-display font-bold flex items-center gap-3">
                         <CalIcon className="text-accent" size={32} />
@@ -98,7 +107,7 @@ export default function Calendar() {
                     <p className="text-text-secondary mt-1">Track your daily cashflow visually.</p>
                 </div>
 
-                <div className="flex items-center gap-3 bg-surface p-1.5 rounded-2xl border border-border">
+                <div className="flex items-center gap-3 bg-surface p-1.5 rounded-2xl border border-border self-start md:self-auto">
                     <button onClick={() => changeMonth(-1)} className="p-2 hover:bg-bg rounded-xl transition-colors text-text-secondary hover:text-accent">
                         <ChevronLeft size={20} />
                     </button>
@@ -111,8 +120,8 @@ export default function Calendar() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 flex-1 min-h-0">
-                <div className="lg:col-span-3 bg-surface border border-border rounded-3xl p-6 shadow-xl flex flex-col">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 flex-1 min-h-0 px-4 md:px-0">
+                <div className="lg:col-span-3 bg-surface border border-border rounded-3xl p-4 md:p-6 shadow-xl flex flex-col overflow-hidden">
                     <div className="grid grid-cols-7 mb-4">
                         {DAYS.map(d => (
                             <div key={d} className="text-center text-[10px] uppercase font-black tracking-widest text-text-muted pb-4 border-b border-border/50">
@@ -121,7 +130,7 @@ export default function Calendar() {
                         ))}
                     </div>
 
-                    <div className="grid grid-cols-7 flex-1">
+                    <div className="grid grid-cols-7 flex-1 overflow-y-auto no-scrollbar">
                         {calendarDays.map((item, idx) => {
                             const isSelected = selectedDate && item.date &&
                                 selectedDate.getDate() === item.day &&
@@ -134,37 +143,37 @@ export default function Calendar() {
                                     key={idx}
                                     onClick={() => item.date && setSelectedDate(item.date)}
                                     className={`
-                                        group relative aspect-square border-b border-r border-border/30 p-2 cursor-pointer transition-all hover:bg-white/5
+                                        group relative aspect-square border-b border-r border-border/30 p-1 md:p-2 cursor-pointer transition-all hover:bg-white/5
                                         ${!item.day ? 'bg-bg/20' : ''}
-                                        ${isSelected ? 'bg-accent/5' : ''}
+                                        ${isSelected ? 'bg-accent/10 border-accent/20' : ''}
                                     `}
                                 >
                                     {item.day && (
                                         <>
                                             <span className={`
-                                                text-sm font-display font-bold relative z-10
+                                                text-xs md:text-sm font-display font-bold relative z-10
                                                 ${isToday ? 'text-accent' : isSelected ? 'text-text-primary' : 'text-text-secondary'}
                                             `}>
                                                 {item.day}
                                             </span>
 
                                             {hasTransactions && (
-                                                <div className="mt-1 flex flex-wrap gap-1 max-h-[70%] overflow-hidden">
+                                                <div className="mt-1 flex flex-wrap gap-0.5 md:gap-1 max-h-[70%] overflow-hidden">
                                                     {item.transactions!.slice(0, 4).map((t, i) => (
                                                         <div
                                                             key={i}
-                                                            className="w-1.5 h-1.5 rounded-full shadow-sm"
+                                                            className="w-1 md:w-1.5 h-1 md:h-1.5 rounded-full shadow-sm"
                                                             style={{ backgroundColor: (CATEGORY_COLORS as any)[t.category] || CATEGORY_COLORS.other }}
                                                         />
                                                     ))}
                                                     {item.transactions!.length > 4 && (
-                                                        <span className="text-[8px] font-black text-text-muted">+{item.transactions!.length - 4}</span>
+                                                        <span className="text-[7px] md:text-[8px] font-black text-text-muted">+{item.transactions!.length - 4}</span>
                                                     )}
                                                 </div>
                                             )}
 
                                             {isToday && (
-                                                <div className="absolute top-2 right-2 w-1 h-1 bg-accent rounded-full animate-ping" />
+                                                <div className="absolute top-1 md:top-2 right-1 md:right-2 w-1 h-1 bg-accent rounded-full animate-ping" />
                                             )}
                                         </>
                                     )}
@@ -207,7 +216,7 @@ export default function Calendar() {
                                                 className="group bg-bg/50 border border-border/50 p-4 rounded-2xl hover:border-accent/40 transition-all"
                                             >
                                                 <div className="flex justify-between items-start mb-1">
-                                                    <p className="font-bold text-sm text-text-primary capitalize leading-tight truncate pr-2 break-words" title={t.description}>{t.description}</p>
+                                                    <p className="font-bold text-sm text-text-primary capitalize leading-tight truncate pr-2" title={t.description}>{t.description}</p>
                                                     <p className={`font-mono text-xs font-bold shrink-0 ${t.type === 'income' ? 'text-accent' : 'text-text-primary'}`}>
                                                         {t.type === 'income' ? '+' : '-'}₹{t.amount.toLocaleString()}
                                                     </p>
@@ -230,24 +239,37 @@ export default function Calendar() {
                             </AnimatePresence>
                         </div>
 
-                        {selectedTransactions.length > logLimit && (
-                            <div className="mt-4 pt-4 border-t border-border/30">
-                                <div className="flex justify-between items-center mb-3">
-                                    <span className="text-[10px] font-black text-text-muted uppercase tracking-widest">
-                                        Rows {logPage * logLimit + 1} - {Math.min((logPage + 1) * logLimit, selectedTransactions.length)} / {selectedTransactions.length}
-                                    </span>
-                                    <div className="flex gap-1">
-                                        {[...Array(totalLogPages)].map((_, i) => (
-                                            <div key={i} className={`h-1 rounded-full transition-all ${i === logPage ? 'w-4 bg-accent' : 'w-1 bg-border'}`} />
-                                        ))}
+                        {selectedTransactions.length > 0 && (
+                            <div className="mt-6 p-4 bg-bg/50 border border-border rounded-2xl">
+                                <div className="flex flex-col gap-2">
+                                    <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest">
+                                        <span className="text-text-muted">Net Cashflow</span>
+                                        <span className={netAmount >= 0 ? 'text-accent font-bold' : 'text-accent-red font-bold'}>
+                                            {netAmount >= 0 ? '+' : ''}₹{netAmount.toLocaleString()}
+                                        </span>
+                                    </div>
+                                    <div className="w-full bg-border/30 h-1 rounded-full overflow-hidden flex">
+                                        {dailyTotals.income + dailyTotals.expense > 0 ? (
+                                            <>
+                                                <div className="bg-accent h-full shadow-[0_0_8px_rgba(163,230,53,0.3)]" style={{ width: `${(dailyTotals.income / (dailyTotals.income + dailyTotals.expense)) * 100}%` }} />
+                                                <div className="bg-white/20 h-full" style={{ width: `${(dailyTotals.expense / (dailyTotals.income + dailyTotals.expense)) * 100}%` }} />
+                                            </>
+                                        ) : (
+                                            <div className="bg-border/20 w-full h-full" />
+                                        )}
                                     </div>
                                 </div>
+                            </div>
+                        )}
+
+                        {selectedTransactions.length > logLimit && (
+                            <div className="mt-4 pt-4 border-t border-border/30">
                                 <button
                                     onClick={() => setLogPage(p => hasNextLogs ? p + 1 : 0)}
-                                    className="w-full py-2.5 bg-bg border border-border rounded-xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-surface hover:text-accent transition-all flex items-center justify-center gap-2"
+                                    className="w-full py-2 bg-bg border border-border rounded-xl text-[9px] font-black uppercase tracking-[0.2em] hover:bg-surface hover:text-accent transition-all flex items-center justify-center gap-2"
                                 >
-                                    <RefreshCw size={12} className={logPage === totalLogPages - 1 ? "" : "animate-spin-slow"} />
-                                    {hasNextLogs ? "Load Next Chunks" : "Back to Start"}
+                                    <RefreshCw size={10} />
+                                    {hasNextLogs ? "More Logs" : "Reset View"}
                                 </button>
                             </div>
                         )}

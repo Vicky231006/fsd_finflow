@@ -23,8 +23,11 @@ Extract:
 - date: ISO date string (use today if not mentioned)
 
 Rules:
-- Payments, debits, spent, bought, paid = expense
-- Received, credited, earned, salary = income
+- Payments, debits, spent, bought, paid, sent = expense
+- Received, credited, earned, salary, from, got = income
+- Understand Indian context: UPI, Swiggy, Zomato, Vada Pav, Biryani, Chai, etc., are common.
+- "Rick" or "Auto" is ALWAYS transport.
+- If it says "from [person/name]", it is ALWAYS income.
 - If amount unclear, return null
 
 Respond ONLY with valid JSON exactly like this:
@@ -68,11 +71,11 @@ function fallbackParse(text: string) {
     }
 
     let type = "expense";
-    if (lower.match(/\b(salary|earned|received|credited|income)\b/)) type = "income";
+    if (lower.match(/\b(salary|earned|received|credited|income|from|got|added)\b/)) type = "income";
 
     let category = "other";
-    if (lower.match(/\b(swiggy|zomato|food|restaurant|grocery|mart|biscuit|cake|chai|coffee)\b/)) category = "food";
-    else if (lower.match(/\b(uber|ola|petrol|cab|rickshaw|auto|train|ticket|flight|bus)\b/)) category = "transport";
+    if (lower.match(/\b(swiggy|zomato|food|restaurant|grocery|mart|biscuit|cake|chai|coffee|snacks|icecream|vada pav|pav bhaji|samosa|pani puri|biryani|maggi|breakfast|lunch|dinner|thali|dosa|idli|momos|pizza|burger|chocolate|canteen)\b/)) category = "food";
+    else if (lower.match(/\b(uber|ola|petrol|cab|rickshaw|auto|train|ticket|flight|bus|rick|auto)\b/)) category = "transport";
     else if (lower.match(/\b(amazon|flipkart|shopping|clothes|myntra|shoes|bag)\b/)) category = "shopping";
     else if (lower.match(/\b(bill|electricity|water|wifi|recharge|jio|airtel|mobile)\b/)) category = "utilities";
     else if (lower.match(/\b(movie|netflix|spotify|party|club|game|steam)\b/)) category = "entertainment";

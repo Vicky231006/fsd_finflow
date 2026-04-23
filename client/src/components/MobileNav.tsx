@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Receipt, PlusCircle, Sparkles, Settings } from 'lucide-react';
+import { LayoutDashboard, Receipt, PlusCircle, Sparkles, Calendar } from 'lucide-react';
 
 export default function MobileNav() {
     const location = useLocation();
@@ -9,7 +9,7 @@ export default function MobileNav() {
         { name: 'Transactions', path: '/app/transactions', icon: Receipt },
         { name: 'Add', path: '/app/input', icon: PlusCircle, special: true },
         { name: 'Advisor', path: '/app/advisor', icon: Sparkles },
-        { name: 'Settings', path: '/app/settings', icon: Settings },
+        { name: 'Calendar', path: '/app/calendar', icon: Calendar },
     ];
 
     return (

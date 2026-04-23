@@ -1,0 +1,701 @@
+Date,Description,Amount,Category,Type
+2026-04-18,Vendiman,535,Food,expense
+2026-02-27,Swiggy,592,Food,expense
+2026-01-25,Spotify,585,Misc,expense
+2026-02-03,Amazon,235,Misc,expense
+2026-03-25,Refund,832,Income,income
+2026-04-01,Amazon,15,Misc,expense
+2026-02-19,Refund,439,Income,income
+2026-03-31,Aatmay,144,Travel,expense
+2026-02-18,Baban Tu,337,Food,expense
+2026-02-01,Metro,765,Travel,expense
+2026-02-23,Chunnila,800,Food,expense
+2026-03-03,Refund,1099,Income,income
+2026-03-04,NPCI Cashback,630,Income,income
+2026-03-12,Zepto,320,Food,expense
+2026-01-12,Spotify,492,Misc,expense
+2026-03-24,Chalo,393,Travel,expense
+2026-01-17,Chalo,503,Travel,expense
+2026-02-12,Margaret,552,Income,income
+2026-03-18,Metro,293,Travel,expense
+2026-02-26,NPCI Cashback,61,Income,income
+2026-03-26,Metro,667,Travel,expense
+2026-03-15,Medical,28,Misc,expense
+2026-04-19,NPCI Cashback,251,Income,income
+2026-04-20,Margaret,723,Income,income
+2026-02-24,Margaret,1335,Income,income
+2026-02-01,Zepto,69,Food,expense
+2026-01-03,Margaret,1274,Income,income
+2026-01-20,Swiggy,583,Food,expense
+2026-02-09,Baban Tu,622,Food,expense
+2026-04-01,Vicky Ds,648,Income,income
+2026-04-24,Zepto,189,Food,expense
+2026-02-06,Binoy,587,Travel,expense
+2026-02-13,Spotify,78,Misc,expense
+2026-03-29,Refund,1363,Income,income
+2026-01-30,Spotify,156,Misc,expense
+2026-04-07,Refund,1187,Income,income
+2026-02-06,Vicky Ds,1377,Income,income
+2026-03-17,Vicky Ds,23,Income,income
+2026-03-02,NPCI Cashback,540,Income,income
+2026-01-07,Aatmay,510,Travel,expense
+2026-01-19,NPCI Cashback,124,Income,income
+2026-04-17,Vendiman,780,Food,expense
+2026-01-28,Vicky Ds,134,Income,income
+2026-01-12,Swiggy,193,Food,expense
+2026-04-01,Binoy,53,Travel,expense
+2026-02-05,Refund,651,Income,income
+2026-01-30,Binoy,584,Travel,expense
+2026-04-07,Vicky Ds,599,Income,income
+2026-01-18,Vicky Ds,574,Income,income
+2026-04-20,Aatmay,532,Travel,expense
+2026-04-14,NPCI Cashback,396,Income,income
+2026-03-29,Metro,211,Travel,expense
+2026-04-17,Medical,42,Misc,expense
+2026-04-09,Spotify,228,Misc,expense
+2026-02-07,Snack Stall,409,Food,expense
+2026-03-15,Refund,940,Income,income
+2026-03-23,Medical,537,Misc,expense
+2026-01-13,Chunnila,257,Food,expense
+2026-02-10,Metro,469,Travel,expense
+2026-02-16,Chalo,715,Travel,expense
+2026-02-25,Rickshaw,366,Travel,expense
+2026-03-25,Chalo,377,Travel,expense
+2026-02-10,Swiggy,109,Food,expense
+2026-02-25,Spotify,66,Misc,expense
+2026-03-08,Vicky Ds,146,Income,income
+2026-04-11,Swiggy,165,Food,expense
+2026-03-11,Rickshaw,487,Travel,expense
+2026-02-14,Refund,360,Income,income
+2026-04-05,Chunnila,235,Food,expense
+2026-04-23,Amazon,192,Misc,expense
+2026-02-03,Binoy,68,Travel,expense
+2026-01-07,Margaret,641,Income,income
+2026-04-09,Spotify,514,Misc,expense
+2026-01-15,Zepto,701,Food,expense
+2026-03-14,Amazon,48,Misc,expense
+2026-01-10,Baban Tu,515,Food,expense
+2026-01-28,Snack Stall,495,Food,expense
+2026-05-01,Amazon,337,Misc,expense
+2026-01-02,Swiggy,100,Food,expense
+2026-04-24,Rickshaw,427,Travel,expense
+2026-01-03,Refund,177,Income,income
+2026-01-14,Chunnila,270,Food,expense
+2026-03-13,Amazon,23,Misc,expense
+2026-01-10,Spotify,368,Misc,expense
+2026-01-04,Vicky Ds,1455,Income,income
+2026-04-30,Rickshaw,95,Travel,expense
+2026-03-09,Amazon,483,Misc,expense
+2026-03-22,Swiggy,597,Food,expense
+2026-04-14,Refund,11,Income,income
+2026-01-30,NPCI Cashback,401,Income,income
+2026-04-01,Vicky Ds,1315,Income,income
+2026-03-24,Metro,386,Travel,expense
+2026-04-04,Vendiman,514,Food,expense
+2026-03-11,Medical,601,Misc,expense
+2026-01-07,Margaret,1087,Income,income
+2026-03-03,Refund,178,Income,income
+2026-03-17,NPCI Cashback,1119,Income,income
+2026-03-12,Refund,974,Income,income
+2026-02-24,Rickshaw,300,Travel,expense
+2026-03-24,Refund,453,Income,income
+2026-03-27,Stationery,259,Misc,expense
+2026-01-11,Binoy,635,Travel,expense
+2026-04-17,Spotify,539,Misc,expense
+2026-04-02,Margaret,1155,Income,income
+2026-03-08,Medical,699,Misc,expense
+2026-04-30,Margaret,383,Income,income
+2026-02-02,Margaret,752,Income,income
+2026-01-13,Stationery,419,Misc,expense
+2026-04-02,Vicky Ds,167,Income,income
+2026-01-09,Rickshaw,297,Travel,expense
+2026-03-05,Metro,753,Travel,expense
+2026-03-22,Margaret,1191,Income,income
+2026-02-21,Zepto,133,Food,expense
+2026-01-05,NPCI Cashback,1209,Income,income
+2026-03-14,Binoy,204,Travel,expense
+2026-02-20,Rickshaw,583,Travel,expense
+2026-04-23,Amazon,193,Misc,expense
+2026-03-15,Amazon,531,Misc,expense
+2026-02-23,Vendiman,24,Food,expense
+2026-01-20,Chunnila,609,Food,expense
+2026-01-13,NPCI Cashback,1116,Income,income
+2026-04-04,Metro,640,Travel,expense
+2026-02-19,Spotify,453,Misc,expense
+2026-02-16,Baban Tu,633,Food,expense
+2026-01-25,Chunnila,414,Food,expense
+2026-02-12,Metro,196,Travel,expense
+2026-02-23,Rickshaw,782,Travel,expense
+2026-04-16,Margaret,46,Income,income
+2026-04-23,Vicky Ds,724,Income,income
+2026-03-21,Medical,724,Misc,expense
+2026-01-28,Vendiman,472,Food,expense
+2026-04-04,Chunnila,545,Food,expense
+2026-04-17,Vicky Ds,343,Income,income
+2026-01-11,Medical,598,Misc,expense
+2026-01-15,Amazon,626,Misc,expense
+2026-01-14,Medical,315,Misc,expense
+2026-03-19,Refund,78,Income,income
+2026-04-08,Spotify,256,Misc,expense
+2026-04-19,Refund,574,Income,income
+2026-02-25,Snack Stall,457,Food,expense
+2026-03-19,Binoy,289,Travel,expense
+2026-02-14,Vicky Ds,392,Income,income
+2026-04-01,Baban Tu,520,Food,expense
+2026-01-03,Aatmay,686,Travel,expense
+2026-04-29,Margaret,566,Income,income
+2026-04-30,Swiggy,734,Food,expense
+2026-03-14,NPCI Cashback,391,Income,income
+2026-01-15,Chalo,756,Travel,expense
+2026-03-07,Amazon,311,Misc,expense
+2026-04-16,Rickshaw,638,Travel,expense
+2026-04-19,NPCI Cashback,377,Income,income
+2026-03-02,Stationery,409,Misc,expense
+2026-03-02,Metro,209,Travel,expense
+2026-01-21,Margaret,442,Income,income
+2026-04-24,Vicky Ds,243,Income,income
+2026-05-01,Vendiman,360,Food,expense
+2026-01-10,Vicky Ds,731,Income,income
+2026-01-22,Vicky Ds,957,Income,income
+2026-01-27,Aatmay,147,Travel,expense
+2026-04-18,NPCI Cashback,555,Income,income
+2026-02-14,Chunnila,264,Food,expense
+2026-03-23,Chunnila,343,Food,expense
+2026-01-09,Vicky Ds,591,Income,income
+2026-04-24,NPCI Cashback,617,Income,income
+2026-02-11,Margaret,1457,Income,income
+2026-02-18,Refund,819,Income,income
+2026-02-18,NPCI Cashback,531,Income,income
+2026-01-23,Vicky Ds,1039,Income,income
+2026-01-20,Chunnila,506,Food,expense
+2026-04-08,Metro,448,Travel,expense
+2026-01-20,Refund,433,Income,income
+2026-01-05,Metro,148,Travel,expense
+2026-01-15,Metro,427,Travel,expense
+2026-04-19,Rickshaw,800,Travel,expense
+2026-01-04,Margaret,935,Income,income
+2026-02-22,Amazon,753,Misc,expense
+2026-04-09,Refund,789,Income,income
+2026-02-24,Spotify,40,Misc,expense
+2026-03-14,Medical,333,Misc,expense
+2026-03-14,Snack Stall,139,Food,expense
+2026-03-21,Medical,386,Misc,expense
+2026-03-04,Spotify,354,Misc,expense
+2026-02-25,Baban Tu,540,Food,expense
+2026-03-20,Snack Stall,776,Food,expense
+2026-03-30,Snack Stall,113,Food,expense
+2026-01-21,Stationery,190,Misc,expense
+2026-01-29,Vicky Ds,699,Income,income
+2026-04-07,Snack Stall,96,Food,expense
+2026-02-03,Rickshaw,193,Travel,expense
+2026-04-14,Rickshaw,631,Travel,expense
+2026-04-11,Chunnila,769,Food,expense
+2026-04-06,NPCI Cashback,797,Income,income
+2026-03-24,Refund,85,Income,income
+2026-04-02,Vendiman,527,Food,expense
+2026-04-04,Rickshaw,758,Travel,expense
+2026-01-19,Medical,579,Misc,expense
+2026-03-24,Aatmay,330,Travel,expense
+2026-04-30,Vendiman,129,Food,expense
+2026-03-05,Swiggy,377,Food,expense
+2026-01-02,Baban Tu,455,Food,expense
+2026-01-04,Snack Stall,102,Food,expense
+2026-01-15,Rickshaw,20,Travel,expense
+2026-03-24,Binoy,337,Travel,expense
+2026-01-29,Chalo,767,Travel,expense
+2026-03-06,Metro,88,Travel,expense
+2026-02-22,Stationery,680,Misc,expense
+2026-04-14,Vicky Ds,394,Income,income
+2026-04-26,NPCI Cashback,1008,Income,income
+2026-02-19,Vicky Ds,370,Income,income
+2026-03-17,Stationery,447,Misc,expense
+2026-02-11,Rickshaw,291,Travel,expense
+2026-03-26,Chalo,734,Travel,expense
+2026-01-20,Binoy,444,Travel,expense
+2026-02-15,Medical,245,Misc,expense
+2026-04-10,Snack Stall,744,Food,expense
+2026-02-19,Vendiman,539,Food,expense
+2026-04-04,Vicky Ds,959,Income,income
+2026-04-28,Margaret,1464,Income,income
+2026-01-16,Swiggy,137,Food,expense
+2026-04-29,Amazon,293,Misc,expense
+2026-03-11,Chunnila,379,Food,expense
+2026-01-25,Medical,573,Misc,expense
+2026-04-23,NPCI Cashback,1390,Income,income
+2026-04-01,Spotify,305,Misc,expense
+2026-04-12,Chalo,584,Travel,expense
+2026-03-08,Refund,719,Income,income
+2026-02-21,Amazon,629,Misc,expense
+2026-04-07,Margaret,1312,Income,income
+2026-02-26,Refund,295,Income,income
+2026-01-22,Spotify,29,Misc,expense
+2026-01-04,Chalo,687,Travel,expense
+2026-01-16,Refund,697,Income,income
+2026-03-21,Snack Stall,421,Food,expense
+2026-01-05,Vicky Ds,728,Income,income
+2026-03-18,Rickshaw,679,Travel,expense
+2026-01-03,Zepto,124,Food,expense
+2026-03-03,Medical,652,Misc,expense
+2026-02-22,Margaret,465,Income,income
+2026-02-03,Medical,193,Misc,expense
+2026-01-19,Zepto,271,Food,expense
+2026-04-19,Medical,295,Misc,expense
+2026-03-10,Chalo,723,Travel,expense
+2026-02-28,Medical,457,Misc,expense
+2026-03-04,Refund,1222,Income,income
+2026-01-04,Snack Stall,349,Food,expense
+2026-02-07,Chalo,255,Travel,expense
+2026-04-25,Baban Tu,292,Food,expense
+2026-01-16,Metro,567,Travel,expense
+2026-03-12,Stationery,799,Misc,expense
+2026-03-03,Amazon,404,Misc,expense
+2026-02-16,Binoy,435,Travel,expense
+2026-03-07,Zepto,94,Food,expense
+2026-02-06,Vicky Ds,686,Income,income
+2026-01-29,Medical,584,Misc,expense
+2026-04-16,Margaret,1232,Income,income
+2026-03-20,Zepto,241,Food,expense
+2026-03-17,NPCI Cashback,364,Income,income
+2026-03-28,Metro,604,Travel,expense
+2026-03-08,Refund,1016,Income,income
+2026-03-20,Zepto,118,Food,expense
+2026-02-27,Margaret,39,Income,income
+2026-02-19,Chalo,529,Travel,expense
+2026-05-01,Refund,1290,Income,income
+2026-02-20,Zepto,254,Food,expense
+2026-02-08,Rickshaw,726,Travel,expense
+2026-03-14,Refund,154,Income,income
+2026-01-01,Spotify,294,Misc,expense
+2026-02-01,Spotify,537,Misc,expense
+2026-03-21,Aatmay,584,Travel,expense
+2026-01-26,Vicky Ds,192,Income,income
+2026-03-23,Aatmay,785,Travel,expense
+2026-01-05,Chunnila,422,Food,expense
+2026-04-01,NPCI Cashback,209,Income,income
+2026-01-13,Swiggy,36,Food,expense
+2026-03-17,Margaret,25,Income,income
+2026-04-21,Medical,393,Misc,expense
+2026-01-15,Vicky Ds,34,Income,income
+2026-01-03,Medical,364,Misc,expense
+2026-03-21,Baban Tu,694,Food,expense
+2026-01-18,Medical,717,Misc,expense
+2026-04-30,Vicky Ds,1331,Income,income
+2026-03-04,Spotify,732,Misc,expense
+2026-03-25,Spotify,87,Misc,expense
+2026-04-13,Baban Tu,523,Food,expense
+2026-03-17,Margaret,661,Income,income
+2026-04-01,Metro,178,Travel,expense
+2026-03-31,Refund,543,Income,income
+2026-04-22,Refund,1384,Income,income
+2026-02-05,Vendiman,644,Food,expense
+2026-03-06,Margaret,981,Income,income
+2026-01-07,Refund,1409,Income,income
+2026-04-22,Aatmay,657,Travel,expense
+2026-01-01,Amazon,86,Misc,expense
+2026-02-28,Spotify,617,Misc,expense
+2026-03-27,Chalo,289,Travel,expense
+2026-01-11,Baban Tu,559,Food,expense
+2026-02-15,NPCI Cashback,1302,Income,income
+2026-01-08,Zepto,459,Food,expense
+2026-01-30,Binoy,46,Travel,expense
+2026-01-07,Stationery,474,Misc,expense
+2026-01-02,Binoy,358,Travel,expense
+2026-03-27,Stationery,686,Misc,expense
+2026-03-22,Metro,638,Travel,expense
+2026-03-24,Metro,323,Travel,expense
+2026-01-24,Chalo,581,Travel,expense
+2026-03-30,Zepto,307,Food,expense
+2026-04-26,Metro,111,Travel,expense
+2026-01-19,Aatmay,659,Travel,expense
+2026-01-25,Vicky Ds,879,Income,income
+2026-01-13,Rickshaw,337,Travel,expense
+2026-03-01,Amazon,506,Misc,expense
+2026-02-23,Margaret,550,Income,income
+2026-02-10,Amazon,470,Misc,expense
+2026-01-28,Swiggy,323,Food,expense
+2026-04-13,Spotify,765,Misc,expense
+2026-04-02,Spotify,633,Misc,expense
+2026-04-16,Baban Tu,471,Food,expense
+2026-02-12,Chunnila,750,Food,expense
+2026-03-03,Amazon,173,Misc,expense
+2026-04-23,Binoy,333,Travel,expense
+2026-02-07,Swiggy,91,Food,expense
+2026-04-05,Vicky Ds,508,Income,income
+2026-02-17,Vendiman,632,Food,expense
+2026-03-02,Binoy,784,Travel,expense
+2026-01-06,Medical,614,Misc,expense
+2026-03-23,Snack Stall,221,Food,expense
+2026-04-12,Rickshaw,766,Travel,expense
+2026-02-25,NPCI Cashback,192,Income,income
+2026-03-08,NPCI Cashback,1461,Income,income
+2026-03-13,Refund,877,Income,income
+2026-03-16,Refund,603,Income,income
+2026-01-24,Vendiman,134,Food,expense
+2026-04-14,Zepto,260,Food,expense
+2026-03-17,Refund,929,Income,income
+2026-02-05,Refund,971,Income,income
+2026-02-08,Aatmay,791,Travel,expense
+2026-03-03,Zepto,226,Food,expense
+2026-01-24,Snack Stall,259,Food,expense
+2026-04-07,NPCI Cashback,627,Income,income
+2026-01-16,Baban Tu,161,Food,expense
+2026-01-30,Medical,725,Misc,expense
+2026-04-30,Aatmay,785,Travel,expense
+2026-03-13,Refund,1319,Income,income
+2026-02-15,Margaret,302,Income,income
+2026-01-12,Vicky Ds,48,Income,income
+2026-02-11,Medical,219,Misc,expense
+2026-04-24,Medical,788,Misc,expense
+2026-04-10,Aatmay,734,Travel,expense
+2026-01-08,Baban Tu,162,Food,expense
+2026-04-16,Margaret,853,Income,income
+2026-04-06,Rickshaw,707,Travel,expense
+2026-01-12,Metro,585,Travel,expense
+2026-01-31,Chalo,159,Travel,expense
+2026-02-04,Spotify,28,Misc,expense
+2026-04-23,Zepto,359,Food,expense
+2026-02-03,Metro,510,Travel,expense
+2026-01-17,Amazon,33,Misc,expense
+2026-02-03,Medical,207,Misc,expense
+2026-01-04,Binoy,134,Travel,expense
+2026-03-22,Metro,595,Travel,expense
+2026-02-27,Spotify,511,Misc,expense
+2026-01-24,Vendiman,760,Food,expense
+2026-03-09,Margaret,1293,Income,income
+2026-03-02,Binoy,675,Travel,expense
+2026-01-07,Zepto,793,Food,expense
+2026-03-12,Rickshaw,470,Travel,expense
+2026-02-17,Baban Tu,572,Food,expense
+2026-02-13,Vendiman,246,Food,expense
+2026-01-02,Stationery,512,Misc,expense
+2026-03-27,Amazon,190,Misc,expense
+2026-01-20,Medical,704,Misc,expense
+2026-02-22,Aatmay,690,Travel,expense
+2026-01-28,Vendiman,424,Food,expense
+2026-02-01,Zepto,601,Food,expense
+2026-03-09,Amazon,275,Misc,expense
+2026-02-16,Spotify,752,Misc,expense
+2026-03-31,Chunnila,271,Food,expense
+2026-02-14,Margaret,1454,Income,income
+2026-04-29,Chunnila,123,Food,expense
+2026-01-06,Metro,154,Travel,expense
+2026-02-09,Refund,503,Income,income
+2026-04-05,Swiggy,669,Food,expense
+2026-01-31,Snack Stall,722,Food,expense
+2026-01-15,Zepto,780,Food,expense
+2026-03-07,NPCI Cashback,1439,Income,income
+2026-02-04,Chalo,225,Travel,expense
+2026-04-21,Vicky Ds,544,Income,income
+2026-04-04,Margaret,1073,Income,income
+2026-01-17,Margaret,864,Income,income
+2026-03-27,Medical,577,Misc,expense
+2026-04-16,Aatmay,403,Travel,expense
+2026-03-05,Medical,486,Misc,expense
+2026-04-16,Binoy,97,Travel,expense
+2026-03-09,Metro,85,Travel,expense
+2026-01-20,Margaret,1227,Income,income
+2026-01-19,Medical,133,Misc,expense
+2026-01-06,Metro,117,Travel,expense
+2026-03-11,Chunnila,654,Food,expense
+2026-03-28,Metro,437,Travel,expense
+2026-01-23,NPCI Cashback,974,Income,income
+2026-03-12,Snack Stall,399,Food,expense
+2026-03-17,Vicky Ds,271,Income,income
+2026-04-05,Chalo,647,Travel,expense
+2026-02-04,Chalo,430,Travel,expense
+2026-04-12,Spotify,247,Misc,expense
+2026-02-22,Chalo,667,Travel,expense
+2026-01-23,Chalo,439,Travel,expense
+2026-03-08,Refund,108,Income,income
+2026-03-24,Binoy,778,Travel,expense
+2026-04-24,Margaret,375,Income,income
+2026-03-15,NPCI Cashback,109,Income,income
+2026-04-29,Stationery,179,Misc,expense
+2026-01-10,Refund,1210,Income,income
+2026-03-11,Binoy,296,Travel,expense
+2026-01-04,Chalo,692,Travel,expense
+2026-04-21,Binoy,327,Travel,expense
+2026-01-05,Spotify,274,Misc,expense
+2026-01-11,Vicky Ds,157,Income,income
+2026-03-21,Rickshaw,686,Travel,expense
+2026-01-24,NPCI Cashback,432,Income,income
+2026-03-12,Baban Tu,634,Food,expense
+2026-04-02,Amazon,135,Misc,expense
+2026-03-20,NPCI Cashback,1013,Income,income
+2026-02-19,Medical,27,Misc,expense
+2026-04-26,NPCI Cashback,12,Income,income
+2026-04-18,NPCI Cashback,684,Income,income
+2026-02-28,Refund,1168,Income,income
+2026-03-01,NPCI Cashback,702,Income,income
+2026-02-22,Aatmay,349,Travel,expense
+2026-04-19,Chalo,752,Travel,expense
+2026-04-11,NPCI Cashback,576,Income,income
+2026-04-14,Baban Tu,575,Food,expense
+2026-04-24,Vicky Ds,1496,Income,income
+2026-04-10,NPCI Cashback,332,Income,income
+2026-05-01,Metro,182,Travel,expense
+2026-01-02,Vicky Ds,1080,Income,income
+2026-01-31,Medical,529,Misc,expense
+2026-03-27,Margaret,1339,Income,income
+2026-03-16,Chalo,578,Travel,expense
+2026-02-12,Vendiman,790,Food,expense
+2026-01-20,Snack Stall,722,Food,expense
+2026-03-02,Rickshaw,303,Travel,expense
+2026-01-07,Rickshaw,231,Travel,expense
+2026-04-21,Amazon,283,Misc,expense
+2026-03-06,Stationery,775,Misc,expense
+2026-01-25,Margaret,459,Income,income
+2026-02-01,NPCI Cashback,998,Income,income
+2026-03-25,Rickshaw,663,Travel,expense
+2026-04-21,Rickshaw,454,Travel,expense
+2026-01-13,Vicky Ds,1095,Income,income
+2026-02-18,Swiggy,439,Food,expense
+2026-02-02,Binoy,63,Travel,expense
+2026-04-20,Margaret,489,Income,income
+2026-03-14,Refund,994,Income,income
+2026-02-22,NPCI Cashback,1047,Income,income
+2026-04-20,Margaret,192,Income,income
+2026-01-17,Vicky Ds,726,Income,income
+2026-02-19,Rickshaw,121,Travel,expense
+2026-01-29,Metro,441,Travel,expense
+2026-04-10,Chalo,375,Travel,expense
+2026-04-01,Refund,952,Income,income
+2026-01-21,Rickshaw,587,Travel,expense
+2026-01-21,Stationery,502,Misc,expense
+2026-03-10,Vicky Ds,175,Income,income
+2026-04-24,NPCI Cashback,662,Income,income
+2026-02-23,Baban Tu,740,Food,expense
+2026-03-08,Vendiman,202,Food,expense
+2026-04-26,Binoy,460,Travel,expense
+2026-02-21,Stationery,715,Misc,expense
+2026-01-18,Rickshaw,787,Travel,expense
+2026-04-28,Stationery,333,Misc,expense
+2026-03-19,Vicky Ds,64,Income,income
+2026-03-12,Swiggy,463,Food,expense
+2026-05-01,Chunnila,488,Food,expense
+2026-04-23,Binoy,86,Travel,expense
+2026-01-19,Rickshaw,422,Travel,expense
+2026-02-20,Medical,254,Misc,expense
+2026-01-11,Refund,378,Income,income
+2026-04-28,Vendiman,77,Food,expense
+2026-01-29,Snack Stall,568,Food,expense
+2026-04-02,Stationery,27,Misc,expense
+2026-01-06,NPCI Cashback,917,Income,income
+2026-01-02,Medical,435,Misc,expense
+2026-04-16,Rickshaw,11,Travel,expense
+2026-04-01,Vicky Ds,945,Income,income
+2026-04-04,Zepto,759,Food,expense
+2026-02-25,Zepto,727,Food,expense
+2026-03-02,NPCI Cashback,1166,Income,income
+2026-03-29,Medical,704,Misc,expense
+2026-03-05,Chunnila,552,Food,expense
+2026-03-01,Zepto,401,Food,expense
+2026-01-28,Medical,417,Misc,expense
+2026-03-10,Vendiman,297,Food,expense
+2026-03-14,Margaret,1151,Income,income
+2026-03-11,Chalo,167,Travel,expense
+2026-01-09,Binoy,254,Travel,expense
+2026-04-14,Baban Tu,741,Food,expense
+2026-01-30,Margaret,38,Income,income
+2026-04-14,Chunnila,137,Food,expense
+2026-01-21,Baban Tu,222,Food,expense
+2026-04-20,Chunnila,777,Food,expense
+2026-04-15,Medical,537,Misc,expense
+2026-04-05,Stationery,80,Misc,expense
+2026-01-21,Binoy,426,Travel,expense
+2026-03-01,Vicky Ds,396,Income,income
+2026-01-07,Amazon,623,Misc,expense
+2026-04-19,NPCI Cashback,1123,Income,income
+2026-03-21,Zepto,328,Food,expense
+2026-04-06,Spotify,121,Misc,expense
+2026-01-29,Spotify,670,Misc,expense
+2026-01-29,Rickshaw,763,Travel,expense
+2026-04-12,Medical,235,Misc,expense
+2026-04-04,Baban Tu,388,Food,expense
+2026-01-06,Amazon,206,Misc,expense
+2026-01-17,Snack Stall,180,Food,expense
+2026-03-17,Vicky Ds,737,Income,income
+2026-04-13,Refund,449,Income,income
+2026-01-09,Chalo,581,Travel,expense
+2026-04-07,Medical,776,Misc,expense
+2026-02-16,Vicky Ds,1026,Income,income
+2026-01-16,Vendiman,569,Food,expense
+2026-01-13,Refund,167,Income,income
+2026-01-25,Baban Tu,266,Food,expense
+2026-02-11,Stationery,690,Misc,expense
+2026-02-11,Rickshaw,483,Travel,expense
+2026-03-26,Amazon,447,Misc,expense
+2026-04-30,Medical,672,Misc,expense
+2026-04-23,Margaret,792,Income,income
+2026-04-10,Rickshaw,7,Travel,expense
+2026-02-10,Spotify,16,Misc,expense
+2026-04-20,Swiggy,109,Food,expense
+2026-04-18,Amazon,345,Misc,expense
+2026-03-13,Medical,411,Misc,expense
+2026-02-04,Swiggy,57,Food,expense
+2026-01-17,Margaret,641,Income,income
+2026-03-01,Margaret,563,Income,income
+2026-02-23,NPCI Cashback,371,Income,income
+2026-04-28,NPCI Cashback,1453,Income,income
+2026-02-08,Vicky Ds,167,Income,income
+2026-03-23,Binoy,753,Travel,expense
+2026-01-20,Rickshaw,240,Travel,expense
+2026-04-07,Zepto,314,Food,expense
+2026-03-26,Spotify,572,Misc,expense
+2026-03-02,Baban Tu,769,Food,expense
+2026-03-28,Margaret,1452,Income,income
+2026-03-18,Swiggy,103,Food,expense
+2026-02-11,Rickshaw,238,Travel,expense
+2026-01-04,Aatmay,746,Travel,expense
+2026-05-01,Medical,628,Misc,expense
+2026-04-18,Metro,160,Travel,expense
+2026-04-20,Refund,1303,Income,income
+2026-02-16,Stationery,496,Misc,expense
+2026-02-17,Chunnila,796,Food,expense
+2026-02-21,Swiggy,766,Food,expense
+2026-01-22,Vicky Ds,1060,Income,income
+2026-01-05,Spotify,323,Misc,expense
+2026-04-26,NPCI Cashback,341,Income,income
+2026-04-15,Spotify,759,Misc,expense
+2026-02-04,Medical,726,Misc,expense
+2026-03-19,Vendiman,120,Food,expense
+2026-03-29,Amazon,44,Misc,expense
+2026-03-03,Amazon,380,Misc,expense
+2026-02-25,Medical,21,Misc,expense
+2026-04-17,NPCI Cashback,149,Income,income
+2026-01-13,Metro,343,Travel,expense
+2026-03-31,NPCI Cashback,152,Income,income
+2026-01-16,Baban Tu,18,Food,expense
+2026-02-25,Chunnila,737,Food,expense
+2026-01-19,Vicky Ds,1010,Income,income
+2026-02-15,Stationery,177,Misc,expense
+2026-03-28,Margaret,730,Income,income
+2026-04-20,Vicky Ds,185,Income,income
+2026-03-02,Chalo,411,Travel,expense
+2026-03-02,NPCI Cashback,926,Income,income
+2026-04-28,Vicky Ds,1170,Income,income
+2026-04-18,Zepto,682,Food,expense
+2026-04-04,Spotify,338,Misc,expense
+2026-03-31,Margaret,115,Income,income
+2026-01-03,Snack Stall,486,Food,expense
+2026-02-24,Spotify,104,Misc,expense
+2026-02-17,Amazon,647,Misc,expense
+2026-01-18,Spotify,565,Misc,expense
+2026-02-01,Margaret,409,Income,income
+2026-02-06,Stationery,723,Misc,expense
+2026-01-25,Chunnila,96,Food,expense
+2026-04-22,Stationery,104,Misc,expense
+2026-02-21,Swiggy,74,Food,expense
+2026-02-10,Spotify,346,Misc,expense
+2026-01-11,Baban Tu,279,Food,expense
+2026-01-17,Snack Stall,88,Food,expense
+2026-03-04,Snack Stall,772,Food,expense
+2026-01-19,Margaret,689,Income,income
+2026-01-07,Metro,785,Travel,expense
+2026-02-23,Baban Tu,103,Food,expense
+2026-03-19,Binoy,252,Travel,expense
+2026-03-15,Metro,278,Travel,expense
+2026-02-19,Metro,240,Travel,expense
+2026-01-21,Snack Stall,490,Food,expense
+2026-03-07,Chunnila,529,Food,expense
+2026-05-01,Medical,568,Misc,expense
+2026-02-27,Baban Tu,449,Food,expense
+2026-04-26,Refund,1478,Income,income
+2026-04-07,Medical,271,Misc,expense
+2026-02-12,Rickshaw,670,Travel,expense
+2026-03-12,Margaret,673,Income,income
+2026-04-13,Binoy,649,Travel,expense
+2026-01-16,Refund,960,Income,income
+2026-03-01,Stationery,768,Misc,expense
+2026-01-21,Aatmay,298,Travel,expense
+2026-01-17,Swiggy,70,Food,expense
+2026-04-25,Baban Tu,588,Food,expense
+2026-04-20,Aatmay,562,Travel,expense
+2026-01-13,Spotify,501,Misc,expense
+2026-01-31,Swiggy,503,Food,expense
+2026-03-05,Refund,1350,Income,income
+2026-04-15,Amazon,466,Misc,expense
+2026-02-25,Amazon,107,Misc,expense
+2026-01-06,Refund,978,Income,income
+2026-04-21,Spotify,502,Misc,expense
+2026-02-23,Binoy,729,Travel,expense
+2026-02-22,Medical,726,Misc,expense
+2026-01-08,Rickshaw,437,Travel,expense
+2026-01-06,Chunnila,509,Food,expense
+2026-03-06,Refund,317,Income,income
+2026-02-20,Chalo,515,Travel,expense
+2026-02-05,Snack Stall,59,Food,expense
+2026-03-18,Metro,574,Travel,expense
+2026-04-12,NPCI Cashback,800,Income,income
+2026-02-06,Stationery,375,Misc,expense
+2026-01-21,Medical,89,Misc,expense
+2026-03-15,Refund,1481,Income,income
+2026-02-21,Snack Stall,391,Food,expense
+2026-01-08,Amazon,403,Misc,expense
+2026-04-12,Medical,648,Misc,expense
+2026-01-28,NPCI Cashback,1392,Income,income
+2026-02-26,Binoy,6,Travel,expense
+2026-02-10,Margaret,197,Income,income
+2026-03-01,Medical,151,Misc,expense
+2026-04-04,Aatmay,603,Travel,expense
+2026-03-23,Chunnila,555,Food,expense
+2026-02-02,Medical,490,Misc,expense
+2026-01-15,Refund,1087,Income,income
+2026-01-30,Stationery,323,Misc,expense
+2026-01-30,Chunnila,628,Food,expense
+2026-02-22,Amazon,734,Misc,expense
+2026-02-07,Rickshaw,137,Travel,expense
+2026-03-22,Binoy,594,Travel,expense
+2026-01-05,Margaret,1366,Income,income
+2026-04-02,Amazon,222,Misc,expense
+2026-01-13,Snack Stall,255,Food,expense
+2026-02-15,Chalo,626,Travel,expense
+2026-04-14,Metro,744,Travel,expense
+2026-03-05,Stationery,497,Misc,expense
+2026-04-17,Margaret,675,Income,income
+2026-03-11,Aatmay,60,Travel,expense
+2026-02-21,Amazon,67,Misc,expense
+2026-01-08,Stationery,107,Misc,expense
+2026-03-08,Spotify,730,Misc,expense
+2026-04-23,Metro,261,Travel,expense
+2026-02-01,Vicky Ds,1009,Income,income
+2026-01-18,Spotify,325,Misc,expense
+2026-01-22,Margaret,927,Income,income
+2026-01-24,Baban Tu,242,Food,expense
+2026-01-29,NPCI Cashback,811,Income,income
+2026-04-08,Binoy,710,Travel,expense
+2026-01-08,Binoy,302,Travel,expense
+2026-04-21,Baban Tu,572,Food,expense
+2026-04-07,Margaret,264,Income,income
+2026-04-24,Chalo,157,Travel,expense
+2026-01-12,Spotify,508,Misc,expense
+2026-04-30,Stationery,722,Misc,expense
+2026-03-20,Refund,948,Income,income
+2026-04-20,Metro,611,Travel,expense
+2026-02-12,Rickshaw,757,Travel,expense
+2026-02-23,Baban Tu,289,Food,expense
+2026-02-07,Baban Tu,558,Food,expense
+2026-03-10,Chalo,680,Travel,expense
+2026-03-16,Margaret,97,Income,income
+2026-04-08,Binoy,670,Travel,expense
+2026-03-18,Swiggy,80,Food,expense
+2026-03-24,Vendiman,155,Food,expense
+2026-04-03,Amazon,371,Misc,expense
+2026-02-02,Binoy,682,Travel,expense
+2026-01-02,Stationery,392,Misc,expense
+2026-01-10,Aatmay,790,Travel,expense
+2026-04-04,Binoy,582,Travel,expense
+2026-03-29,Vicky Ds,1138,Income,income
+2026-01-17,Medical,78,Misc,expense
+2026-02-09,Chalo,333,Travel,expense
+2026-01-13,Aatmay,588,Travel,expense
+2026-02-10,Swiggy,323,Food,expense
+2026-02-05,Aatmay,483,Travel,expense
+2026-03-29,Amazon,403,Misc,expense
+2026-04-29,Medical,302,Misc,expense
+2026-04-15,Margaret,937,Income,income
+2026-01-10,Medical,772,Misc,expense
+2026-02-21,Spotify,87,Misc,expense
+2026-01-26,Refund,605,Income,income
+2026-01-20,Amazon,783,Misc,expense
+2026-01-07,Binoy,796,Travel,expense
