@@ -1,12 +1,10 @@
 import { useEffect, useState, useRef } from 'react';
 import { useAdvisorStore } from '../store/advisorStore';
 import ReactMarkdown from 'react-markdown';
-import { Sparkles, Send, Copy, ThumbsUp, MessageSquarePlus, Trash2 } from 'lucide-react';
-import { useAuthStore } from '../store/authStore';
+import { Sparkles, Send, MessageSquarePlus, Trash2 } from 'lucide-react';
 
 export default function Advisor() {
   const { conversations, activeConversation, isStreaming, loadConversations, createConversation, loadConversation, deleteConversation, sendMessage } = useAdvisorStore();
-  const user = useAuthStore(s => s.user);
   const [input, setInput] = useState("");
   const [streamBuffer, setStreamBuffer] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { api } from '../api/axios';
 import { CATEGORY_COLORS, CATEGORY_ICONS } from '../utils/constants';
 import toast from 'react-hot-toast';
 import { Plus, Trash2 } from 'lucide-react';
