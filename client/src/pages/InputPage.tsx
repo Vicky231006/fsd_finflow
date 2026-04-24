@@ -91,7 +91,7 @@ export default function InputPage() {
     if (["food", "groceries", "dining", "restaurant", "swiggy", "zomato", "snacks", "icecream", "vada pav", "pav bhaji", "samosa", "pani puri", "biryani", "maggi", "breakfast", "lunch", "dinner", "thali", "dosa", "idli", "momos", "pizza", "burger", "chocolate", "canteen"].includes(c)) return "food";
     if (["movie", "netflix", "game", "spotify"].includes(c)) return "entertainment";
     if (["meds", "medicine", "medicines", "doctor", "pharmacy", "pill", "pills", "clinic", "hospital"].includes(c)) return "health";
-    if (["stat","stationary", "stationery", "book", "books", "pen", "notebook", "school", "college"].includes(c)) return "education";
+    if (["stat", "stationary", "stationery", "book", "books", "pen", "notebook", "school", "college"].includes(c)) return "education";
     return "other";
   };
 

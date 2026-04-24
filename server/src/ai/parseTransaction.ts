@@ -30,6 +30,7 @@ Rules:
 - "Meds", "medicine", "pharmacy" is ALWAYS health.
 - "Stationary", "stationery", "pen", "notebook" is ALWAYS education.
 - If it says "from [person/name]", it is ALWAYS income.
+- Understand official bank SMS: "debited by [amount]... trf to [merchant]". Extract merchant accurately.
 - If amount unclear, return null
 
 Respond ONLY with valid JSON exactly like this:
@@ -39,9 +40,17 @@ For unparseable input, respond with: {"error": "Cannot parse"}
 `;
 
 function fallbackParse(text: string) {
-    const amountMatch = text.match(/[\d,.]+[kK]?/);
-    if (!amountMatch) return null;
-    let amountStr = amountMatch[0].toLowerCase().replace(/,/g, '');
+    let amountStr = "";
+    const explicitAmountMatch = text.match(/(?:rs\.?|inr|₹)\s*([\d,.]+)|(?:debited|credited)[^0-9]*([\d,.]+)/i);
+    if (explicitAmountMatch) {
+        amountStr = explicitAmountMatch[1] || explicitAmountMatch[2];
+    } else {
+        const amountMatch = text.match(/(?<![a-zA-Z])[\d,.]+[kK]?(?![a-zA-Z])/);
+        if (!amountMatch) return null;
+        amountStr = amountMatch[0];
+    }
+
+    amountStr = amountStr.toLowerCase().replace(/,/g, '');
     let multiplier = 1;
     if (amountStr.endsWith('k')) {
         multiplier = 1000;
@@ -92,11 +101,20 @@ function fallbackParse(text: string) {
         }
     }
 
+    let description = text.substring(0, 40).replace(amountStr, "").trim();
+    const smsMerchantMatch = text.match(/(?:trf to|transfer to|paid to|sent to|credited to|info|vpa|to)\s+([A-Za-z0-9 ]+?)(?:\s+Refno|\s+on|\s+-|\s+Avl|\s+UPI|\s+If|\s*$)/i);
+    if (smsMerchantMatch && smsMerchantMatch[1]) {
+        description = smsMerchantMatch[1].trim().substring(0, 40);
+    } else if (lower.includes('swiggy')) description = 'Swiggy';
+    else if (lower.includes('zomato')) description = 'Zomato';
+    else if (lower.includes('amazon')) description = 'Amazon';
+    else if (lower.includes('flipkart')) description = 'Flipkart';
+
     return {
         amount,
         type,
         category,
-        description: text.substring(0, 40).replace(amountMatch[0], "").trim(),
+        description: description || "Unknown Transaction",
         date: date.toISOString()
     };
 }
